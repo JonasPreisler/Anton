@@ -6,12 +6,6 @@
 body {
     background-color: #fff;
 }
-h1 {
-    text-shadow: 0 0.05rem 0.2rem rgba(0, 0, 0, .5);
-}
-h3 {
-    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .2);
-}
 .image-container {
     position: relative;
     text-align: center;
@@ -89,7 +83,7 @@ img {
 }
 .logo {
     padding: 5px;
-    width: 105px;
+    width: 155px;
     padding-top: 8px;
     padding-left: 15px;
 }
@@ -200,4 +194,44 @@ img {
 }
 .typewrite .wrap {
   border-right: 3px solid #9a9a9a !important;
+}
+
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
+.floating-desktop {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  width: 300px;
+  margin-left: 20%;
+}
+
+.image-desktop {
+  width: 300px;
+  margin-left: 20%;
+}
+.image-desktop2 {
+  width: 153px;
+  margin-left: 20%;
+}
+
+.floating-mobile {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  width: 300px;
+}
+.window {
+  height: 400px;
 }
